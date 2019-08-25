@@ -85,11 +85,13 @@ a {
 nav ul li:hover {
     background-color: #8cb9c6c7;
     color: rgb(93, 54, 109);
+    transition: 0.5s;
     text-shadow: 0 0 2px rgb(203, 203, 235);
 }
 
 nav ul li:hover i {
     color: rgb(99, 39, 49);
+    transition: 0.5s;
 }
 
 img {
