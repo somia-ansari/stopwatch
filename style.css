@@ -8,19 +8,13 @@ body {
     flex-wrap: wrap;
     background-attachment: fixed;
     margin: 0;
-}
-
-#controls {
-    background-color: #f5f5dc75;
-    width: max-content;
-    padding: 0.5% 15%;
-    border-radius: 30px 0px;
+    width: 100%;
 }
 
 #controls button {
     border: 2px solid #040605;
     border-radius: 15px;
-    background-image: linear-gradient(500deg, #bfe7e9, #d08b9a);
+    background-image: linear-gradient(500deg, #c8b16c, #9fa6ab);
     color: #040605;
     font-weight: 700;
     text-shadow: 1px 1px 1px #4a4d70;
@@ -39,7 +33,7 @@ span {
 
 p {
     color: #232a3d;
-    background-image: linear-gradient(to right, #bfe7e9a1, #d08b9ad4);
+    background-image: linear-gradient(to right, #c8b16c, #9fa6ab);
     padding: 0 10px;
     border-radius: 10px;
     margin: 0;
@@ -55,7 +49,7 @@ p {
 }
 
 nav {
-    background-image: linear-gradient(to right, #bfe7e9a1, #d08b9ad4);
+    background-image: linear-gradient(to right, #c8b16c, #9fa6ab);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -82,11 +76,27 @@ a {
     text-decoration: none;
 }
 
+#controls {
+    background-color: #f5f5dc75;
+    width: max-content;
+    padding: 0.5% 5%;
+    display: flex;
+    border-radius: 30px 0px;
+}
+
 nav ul li:hover {
-    background-color: #8cb9c6c7;
-    color: rgb(93, 54, 109);
-    transition: 0.5s;
+    background-color: #232a3d;
+    color: #c8b16c;
     text-shadow: 0 0 2px rgb(203, 203, 235);
+    transition: 0.5s;
+}
+
+#controls button:hover {
+    background-image: none;
+    transition: 0.5s;
+    color: #c8b16c;
+    background-color: #232a3d;
+    text-shadow: none;
 }
 
 nav ul li:hover i {
@@ -103,9 +113,10 @@ img {
 
 @media only screen and (min-width: 600px) {
     body {
-        background-image: url(images/dec.jpg);
+        background-image: url(images/clock.jpg);
         align-items: center;
         justify-content: center;
+        background-position: cover;
     }
     p {
         font-size: 3.5em;
@@ -113,7 +124,7 @@ img {
     span {
         font-size: 1.5em;
         color: #232a3d;
-        text-shadow: 0px 0px 7px #ce97a5;
+        text-shadow: 0px 0px 7px #c8b16c;
         background-color: #a9a9a9c2;
         border-radius: 45px;
         padding: 0 20px;
