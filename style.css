@@ -27,7 +27,7 @@ span {
     font-size: 20px;
     padding: 0;
     color: #8cb9c6;
-    margin: 0;
+    margin: 10px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -37,14 +37,16 @@ p {
     padding: 0 10px;
     border-radius: 10px;
     margin: 0;
+    /* flex: 1; */
 }
 
 #time {
     margin: 40px 0px 20px 0px;
     font-size: 40px;
     display: flex;
+    width: 76%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -67,6 +69,9 @@ nav ul li {
     padding: 1em;
     font-size: 1em;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #232a3d;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -79,7 +84,7 @@ a {
 #controls {
     background-color: #f5f5dc75;
     width: max-content;
-    padding: 0.5% 5%;
+    padding: 0.5% 2%;
     display: flex;
     border-radius: 30px 0px;
 }
@@ -89,6 +94,13 @@ nav ul li:hover {
     color: #c8b16c;
     text-shadow: 0 0 2px rgb(203, 203, 235);
     transition: 0.5s;
+}
+
+#display-time {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: -webkit-fill-available;
 }
 
 #controls button:hover {
@@ -105,10 +117,17 @@ nav ul li:hover i {
 }
 
 img {
-    margin-top: 10px;
-    height: 81px;
+    height: 53px;
     border-radius: 40px;
-    width: 83px;
+    width: 58px;
+}
+
+#ms {
+    width: 7%;
+}
+
+div+span {
+    margin: 20px 0 0 34px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -119,7 +138,7 @@ img {
         background-position: cover;
     }
     p {
-        font-size: 3.5em;
+        font-size: 2.7em;
     }
     span {
         font-size: 1.5em;
@@ -141,6 +160,10 @@ img {
         padding: 1.5em;
         font-size: 1.2em;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         color: #232a3d;
     }
 }

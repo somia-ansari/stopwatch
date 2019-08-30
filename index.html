@@ -33,23 +33,28 @@
         </ul>
     </nav>
     <div id="time">
-        <p>00 : 00 : 00</p>
+        <div id="display-time">
+            <p>00 : 00 : 00</p>
+            <span id="ms"></span>
+        </div>
+
         <span>Hrs. : Mins. : Secs.</span>
 
     </div>
 
     <div id="controls">
-        <button onclick="start()" click()>Start
+        <button id="start" onclick="start()" click()>Start
                 <i class="fas fa-play"></i>
         </button>
-        <button onclick="stop()">Stop
+        <img src="images/timerun.gif" alt="timerun">
+
+        <button id="stop" onclick="stop()">Stop
                 <i class="fas fa-pause"></i>
         </button>
-        <button onclick="reset()">Reset
+        <button id="reset" onclick="reset()">Reset
                 <i class="fas fa-sync-alt"></i>
         </button>
     </div>
-    <img src="images/timerun.gif" alt="timerun">
 
     <script src="script.js"></script>
 </body>
